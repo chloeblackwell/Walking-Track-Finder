@@ -10,7 +10,7 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 8080;
 
 // Define middleware here
 app.use(logger("dev"));
@@ -32,11 +32,11 @@ app.use(
 
 app.use(express.static("public"));
 // DB Config
-const MONGODB_URI = ""
-const mongoURI = "";
+
+const mongoURI = "mongodb+srv://chloeblackwell:peacelily123@cluster0.ijkdy.mongodb.net/walkingTrackFinder";
 
 // Connect to MongoDB
-mongoose.connect(MONGODB_URI || mongoURI, {
+mongoose.connect(process.env.MONGODB_URI || mongoURI, {
     useNewUrlParser: true,
     useFindAndModify: false
 })

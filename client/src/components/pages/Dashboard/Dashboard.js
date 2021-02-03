@@ -1,41 +1,31 @@
-import React, { Component } from "react";
-import jwt_decode from 'jwt-decode';
+import React from 'react';
+import { useAppContext } from '../../../store/index';
+import { useLoginCheck } from '../../../utils/setAuthToken';
+import FavouritesList from "../../favourites/favourites";
 
 
-class DashBoard extends Component {
-    constructor() {
-        super()
-        this.state = {
-            first_name: '',
-            last_name: '',
-            email: '',
-            password: ''
-        }
-    }
+function DashBoard() {
+    const [state, appDispatch] = useAppContext();
+    console.log(state);
 
-    componentDidMount() {
-        const token = localStorage.usertoken;
-        const decoded = jwt_decode(token);
-        this.setState({
-            first_name: decoded.first_name,
-            last_name: decoded.last_name,
-            email: decoded.email
-        })
-    }
+    useLoginCheck(appDispatch);
 
-    render() {
-        return (
-            <div className="container-fluid pl-0">
-                <div>
-                    <h1>
-                        Welcome {this.state.first_name} {this.state.last_name}
-                    </h1>
-                    <div className="d-flex flex-row-reverse mr-5">
-                    </div>
+    return (
+        <div className="container-fluid pl-0">
+            <div>
+                <h1>
+                    Welcome {state.user.first_name} {state.user.last_name}
+                </h1>
+                <div className="mr-5">
+
+                    <h2 className="text-center">
+                        View Favourites
+                        </h2>
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
+
 }
 
 export default DashBoard;

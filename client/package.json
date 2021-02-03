@@ -18,6 +18,8 @@
     "bootstrap": "^4.4.1",
     "classnames": "^2.2.6",
     "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.20",
+    "mapbox-gl": "^2.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
@@ -25,8 +27,6 @@
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.1",
-    "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0",
     "semantic-ui-react": "^0.88.2",
     "styled-components": "^5.1.0"
   },
@@ -53,5 +53,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:8080"
 }
