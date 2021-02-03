@@ -2,7 +2,7 @@ require('dotenv').config();
 let mongoose = require("mongoose");
 let Track = require("../models/Track");
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://chloeblackwell:peacelily123@cluster0.ijkdy.mongodb.net/walkingTrackFinder", {
+mongoose.connect(process.env.MONGODB_URI || "", {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true,

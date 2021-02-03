@@ -33,7 +33,7 @@ app.use(
 app.use(express.static("public"));
 // DB Config
 
-const mongoURI = "mongodb+srv://chloeblackwell:peacelily123@cluster0.ijkdy.mongodb.net/walkingTrackFinder";
+const mongoURI = "";
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI || mongoURI, {
