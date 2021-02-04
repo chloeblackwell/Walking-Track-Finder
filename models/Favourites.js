@@ -3,10 +3,8 @@ const Schema = mongoose.Schema;
 
 // Create Schema
 const FavouritesSchema = new Schema({
-    _id: Schema.Types.ObjectId,
-    user: [{ type: Schema.Types.ObjectId, ref: "User" }],
-    track: [{ type: Schema.Types.ObjectId, ref: "Track" }]
-
+    user: { type: Schema.Types.ObjectId, ref: "users" },
+    track: { type: Schema.Types.ObjectId, ref: "tracks" }
 })
 
 const Favourites = mongoose.model("favourites", FavouritesSchema);

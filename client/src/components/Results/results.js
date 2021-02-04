@@ -1,46 +1,36 @@
 import React, { useState, useEffect } from "react";
 import { Button, Card, CardDeck } from 'react-bootstrap';
-import { getTracks } from "../../utils/trackFunctions";
+import { getTracks, addTrack } from "../../utils/trackFunctions";
 
 
 function SearchResults() {
 
-
+    const [tracks, setTracks] = useState([]);
 
     useEffect(() => {
-        getTracks();
+        getTracks().then(data => {
+            setTracks(data);
+        })
     }, []);
 
     return (
         <div>
-            <CardDeck >
+            {tracks.map(track => (
                 <Card>
-                    <Card.Body>
-                        <Card.Title>
-                        </Card.Title>
-                        <Card.Text>
-                        </Card.Text>
-                    </Card.Body>
+                    <Card.Title>
+                        {track.track_name}
+                    </Card.Title>
+                    <Card.Text>
+                        {track.track_location}<br></br>
+                        {track.track_distance}
+                    </Card.Text>
                     <Card.Footer>
-                        <Button className="primary">Add to favourites</Button>
+                        <Button onClick={() => addTrack(track._id)} className="primary">Add to favourites</Button>
                     </Card.Footer>
                 </Card>
-            </CardDeck>
+            ))}
         </div >
     )
 };
-
-
-
-
-
-
-// Results of table rendered out into cards
-
-
-
-
-
-
 
 export default SearchResults;

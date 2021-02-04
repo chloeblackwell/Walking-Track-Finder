@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import mapboxgl from 'mapbox-gl';
 import "./map.css";
 
-mapboxgl.accessToken = '';
+
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
 
 class DisplayMap extends React.Component {

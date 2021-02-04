@@ -19,17 +19,15 @@ router.get("/api/tracks", (req, res) => {
 
 // Get one track 
 
-router.get("/api/track/:id", (req, res) => {
+router.post("/api/findTrack", (req, res) => {
     Track.findOne({
-        attributes: ["_id"]
-    }).then(response => {
-        if (response) {
-            res.json(response)
-        }
-        else {
-            res.status(400).json
-        }
+        _id: (req.body.trackData)
+    }).populate('favourites').exec((err, doc) => {
+        if (err) { res.status(400).json }
+        res.json(doc)
+
     })
-})
+
+});
 
 module.exports = router;

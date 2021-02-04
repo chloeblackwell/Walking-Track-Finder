@@ -14,4 +14,16 @@ export const getTracks = trackData => {
         })
 }
 
+export const addTrack = trackData => {
+    return axios
+        .post("/api/add", { trackData })
+        .then(response => {
+            console.log(response);
+            return response.data
+        })
+        .catch(err => {
+            console.log(err);
+        })
+}
+
 // Get one track 
