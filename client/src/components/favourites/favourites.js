@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getFavourites } from "../../utils/favouritesFunctions";
+import { Button, Card, CardDeck } from 'react-bootstrap';
 
 // Once button has been clicked, moves card to favourites page. Similar to homepage 
 
@@ -14,16 +15,20 @@ function FavouriteList() {
             setFavourites(data);
         })
     }, []);
+
     return (
         <div>
-            <ul>
-                <li>
-
-                </li>
-            </ul>
-
-
-
+            <CardDeck>
+                {favourites.map(favourite => (
+                    <Card>
+                        <Card.Text>
+                            {favourite.track.track_name}
+                            {favourite.track.track_location}
+                            {favourite.track.track_distance}
+                        </Card.Text>
+                    </Card>
+                ))}
+            </CardDeck>
         </div>
     )
 }

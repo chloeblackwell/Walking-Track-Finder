@@ -1,27 +1,41 @@
-import React, { useEffect, useState } from "react";
-import './style.css';
+// import React, { useEffect, useState } from "react";
+// import './style.css';
 
-function Search(props) {
+// function Search() {
 
-    // Filter through results 
-    return (
-        <form>
-            <input
-                value={props.search}
-                onChange={props.handleInputChange}
-                name="search"
-                type="text"
-                label="Search!"
-                className="form-control"
-                placeholder="Search Name"
-                id="searchBar"
-            />
-            <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success mt-3 searchButton">
-                Search
-                </button>
-        </form>
-    )
+//     const [searchTerm, setSearchTerm] = useState("");
+//     const [searchResults, setSearchResults] = useState([]);
 
-}
+//     const handleInputChange = event => {
+//         setSearchTerm(event.target.value);
+//     }
 
-export default Search;
+//     useEffect(() => {
+//         const results = tracks.filter(track => {
+//             track.toLowerCase().includes(searchResults)
+//         });
+//         setSearchResults(results);
+//     }), [searchResults];
+
+//     // Filter through results 
+//     return (
+//         <form>
+//             <input
+//                 value={searchTerm}
+//                 onChange={handleInputChange}
+//                 name="search"
+//                 type="text"
+//                 label="Search!"
+//                 className="form-control"
+//                 placeholder="Search Name"
+//                 id="searchBar"
+//             />
+//             <button type="submit"  className="btn btn-success mt-3 searchButton">
+//                 Search
+//                 </button>
+//         </form>
+//     )
+
+// }
+
+// export default Search;

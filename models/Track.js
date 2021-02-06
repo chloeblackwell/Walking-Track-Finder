@@ -4,6 +4,10 @@ const Schema = mongoose.Schema;
 // Create Schema
 const TrackSchema = new Schema({
 
+    track_image: {
+        type: String,
+        data: Buffer
+    },
     track_name: {
         type: String,
         required: true
