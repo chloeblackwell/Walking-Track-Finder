@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { getFavourites } from "../../utils/favouritesFunctions";
-import { Button, Card, CardDeck } from 'react-bootstrap';
+import { getFavourites, deleteFavourites } from "../../utils/favouritesFunctions";
+import { Button, Card } from 'react-bootstrap';
+import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 // Once button has been clicked, moves card to favourites page. Similar to homepage 
 
@@ -18,18 +20,23 @@ function FavouriteList() {
 
     return (
         <div>
-            <CardDeck>
-                {favourites.map(favourite => (
-                    <Card>
-                        <Card.Text>
-                            {favourite.track.track_name}
-                            {favourite.track.track_location}
-                            {favourite.track.track_distance}
-                        </Card.Text>
-                    </Card>
-                ))}
-            </CardDeck>
-        </div>
+            <div className="container">
+                <div className="row">
+                    {favourites.map(favourite => (
+                        <Card style={{ width: '18rem', display: "flex" }}>
+                            <Card.Text>
+                                <Card.Img src={favourite.track.track_image} alt={favourite.track.track_name} />
+                                {favourite.track.track_name}<br></br>
+                                <LocationOnIcon />{favourite.track.track_location}<br></br>
+                                {favourite.track.track_distance}<br></br>
+                                <DirectionsWalkIcon /> {favourite.track.track_intensity}
+                            </Card.Text>
+                            <Button onClick={() => deleteFavourites(favourite._id)}>Remove from favourites</Button>
+                        </Card>
+                    ))}
+                </div>
+            </div>
+        </div >
     )
 }
 

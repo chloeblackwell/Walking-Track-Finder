@@ -12,3 +12,9 @@ export const getFavourites = favouritesData => {
             console.log(err);
         })
 }
+
+export const deleteFavourites = favouritesData => {
+    return axios
+        .delete('/api/deleteFavourite', {
+        })
+}

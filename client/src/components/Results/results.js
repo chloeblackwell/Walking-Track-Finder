@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Button, Card, CardDeck } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import { getTracks, addTrack } from "../../utils/trackFunctions";
+import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import "./style.css";
 
 
 function SearchResults() {
@@ -20,7 +23,7 @@ function SearchResults() {
 
         );
         setTracks(results)
-    }, [result])
+    }, []);
 
 
     const onChange = (e) => {
@@ -44,21 +47,27 @@ function SearchResults() {
                     Search
                 </button>
             </form>
-            {tracks.map(track => (
-                <Card>
-                    <Card.Title>
-                        {/* {track.track_image} */}
-                        {track.track_name}
-                    </Card.Title>
-                    <Card.Text>
-                        {track.track_location}<br></br>
-                        {track.track_distance}
-                    </Card.Text>
-                    <Card.Footer>
-                        <Button onClick={() => addTrack(track._id)} className="primary">Add to favourites</Button>
-                    </Card.Footer>
-                </Card>
-            ))}
+            <div className="container">
+                <div className="row">
+                    {tracks.map(track => (
+                        <Card style={{ width: '18rem', display: "flex" }}>
+                            <Card.Img src={track.track_image} alt={track.track_name} />
+                            <Card.Title>
+                                {/* {track.track_image} */}
+                                {track.track_name}
+                            </Card.Title>
+                            <Card.Text>
+                                <LocationOnIcon />{track.track_location}<br></br>
+                                {track.track_distance}<br></br>
+                                <DirectionsWalkIcon />{track.track_intensity}
+                            </Card.Text>
+                            <Card.Footer>
+                                <Button onClick={() => addTrack(track._id)} className="primary">Add to favourites</Button>
+                            </Card.Footer>
+                        </Card>
+                    ))}
+                </div>
+            </div>
         </div >
     )
 };

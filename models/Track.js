@@ -19,6 +19,10 @@ const TrackSchema = new Schema({
     track_distance: {
         type: String,
         required: true
+    },
+    track_intensity: {
+        type: String,
+        required: true
     }
 });
 
