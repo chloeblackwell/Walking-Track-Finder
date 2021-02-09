@@ -3,3 +3,7 @@
   width: 600px;
   margin-left: 25%;
 }
+
+.mapboxg1-control-container .mapboxg1-ctrl-top-right {
+  left: 50px !important;
+}
