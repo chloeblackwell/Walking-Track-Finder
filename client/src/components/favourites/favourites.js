@@ -3,6 +3,8 @@ import { getFavourites, deleteFavourites } from "../../utils/favouritesFunctions
 import { Button, Card } from 'react-bootstrap';
 import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRoute } from '@fortawesome/free-solid-svg-icons'
 
 // Once button has been clicked, moves card to favourites page. Similar to homepage 
 
@@ -28,7 +30,7 @@ function FavouriteList() {
                                 <Card.Img src={favourite.track.track_image} alt={favourite.track.track_name} />
                                 {favourite.track.track_name}<br></br>
                                 <LocationOnIcon />{favourite.track.track_location}<br></br>
-                                {favourite.track.track_distance}<br></br>
+                                <FontAwesomeIcon icon={faRoute} />{favourite.track.track_distance}<br></br>
                                 <DirectionsWalkIcon /> {favourite.track.track_intensity}
                             </Card.Text>
                             <Button onClick={() => deleteFavourites(favourite._id)}>Remove from favourites</Button>

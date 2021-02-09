@@ -4,7 +4,8 @@ import { getTracks, addTrack } from "../../utils/trackFunctions";
 import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import ImportExportIcon from '@material-ui/icons/ImportExport';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRoute } from '@fortawesome/free-solid-svg-icons'
 import "./style.css";
 
 
@@ -60,7 +61,7 @@ function SearchResults() {
                             </Card.Title>
                             <Card.Text>
                                 <LocationOnIcon />{track.track_location}<br></br>
-                                <ImportExportIcon />{track.track_distance}<br></br>
+                                <FontAwesomeIcon icon={faRoute} /> {track.track_distance}<br></br>
                                 <DirectionsWalkIcon />{track.track_intensity}
                             </Card.Text>
                             <Card.Footer>
