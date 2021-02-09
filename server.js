@@ -38,7 +38,10 @@ const mongoURI = "";
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI || mongoURI, {
     useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
     useFindAndModify: false
+
 })
     .then(() => console.log("MongoDB successfully connected"))
     .catch(err => console.log(err));
