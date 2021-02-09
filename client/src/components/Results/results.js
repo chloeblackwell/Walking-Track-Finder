@@ -3,6 +3,8 @@ import { Button, Card } from 'react-bootstrap';
 import { getTracks, addTrack } from "../../utils/trackFunctions";
 import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import ImportExportIcon from '@material-ui/icons/ImportExport';
 import "./style.css";
 
 
@@ -58,11 +60,11 @@ function SearchResults() {
                             </Card.Title>
                             <Card.Text>
                                 <LocationOnIcon />{track.track_location}<br></br>
-                                {track.track_distance}<br></br>
+                                <ImportExportIcon />{track.track_distance}<br></br>
                                 <DirectionsWalkIcon />{track.track_intensity}
                             </Card.Text>
                             <Card.Footer>
-                                <Button onClick={() => addTrack(track._id)} className="primary">Add to favourites</Button>
+                                <Button onClick={() => addTrack(track._id)} className="primary"><FavoriteIcon />Add to favourites</Button>
                             </Card.Footer>
                         </Card>
                     ))}
