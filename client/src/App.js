@@ -1,11 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import "bootswatch/dist/minty/bootstrap.min.css";
 import Navbar from './components/Navbar/Navbar';
 import Landing from './components/pages/Landing/Landing';
 import Register from './components/Register/register';
 import Login from './components/Login/login';
 import Dashboard from './components/pages/Dashboard/Dashboard';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { AppContextProvider } from './store/index';
 // import Auth from './Auth';
 

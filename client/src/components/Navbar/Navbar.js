@@ -19,12 +19,12 @@ function Navbar() {
     const loginRegLink = (
         <ul className='navbar-nav list-group list-group-horizontal'>
             <li>
-                <Link className='btn btn-sm active mr-1 mb-1' to='/login'>
+                <Link className='btn btn-sm active mr-1 mb-1 pink' to='/login'>
                     Login
                     </Link>
             </li>
             <li>
-                <Link className='btn btn-sm active' to='/register'>
+                <Link className='btn btn-sm active pink' to='/register'>
                     Register
                     </Link>
             </li>
@@ -33,12 +33,12 @@ function Navbar() {
     const userLink = (
         <ul className='navbar-nav list-group list-group-horizontal'>
             <li>
-                <Link className='btn btn-sm active mr-1 mb-1' to='/'>
+                <Link className='btn btn-sm active mr-1 mb-1 pink' to='/'>
                     Home
                     </Link>
             </li>
             <li>
-                <Link className='btn btn-sm active mr-1 mb-1' to='/dashboard'>
+                <Link className='btn btn-sm active mr-1 mb-1 pink' to='/dashboard'>
                     Dashboard
                     </Link>
             </li>
@@ -46,14 +46,14 @@ function Navbar() {
                 {/* <a href="/" rel='noopener noreferrer' onClick={this.logOut.bind(this)}>
                         Logout
                     </a> */}
-                <button className="btn btn-sm active" id="logoutBtn" data-toggle="modal" data-target="#logoutModal" onClick={handleLogOut}>
+                <button className="btn btn-sm active pink" id="logoutBtn" data-toggle="modal" data-target="#logoutModal" onClick={handleLogOut}>
                     <div>Logout</div>
                 </button>
             </li>
         </ul>
     )
     return (
-        <nav className='navbar navbar-expand-lg'>
+        <nav className='navbar navbar-expand-lg navbar-dark'>
             <Link className="navbar-brand" to="/">
                 Walking Track Finder
             </Link>

@@ -1,7 +1,8 @@
 import React from 'react';
 import mapboxgl from 'mapbox-gl';
 import "./map.css";
-import MapboxGeocoder from "mapbox-gl-geocoder"
+import "mapbox-gl/dist/mapbox-gl.css"
+import MapboxGeocoder from "mapbox-gl-geocoder";
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
@@ -28,7 +29,6 @@ class DisplayMap extends React.Component {
             new MapboxGeocoder({
                 accessToken: mapboxgl.accessToken,
                 mapboxgl: mapboxgl
-
             })
         );
 

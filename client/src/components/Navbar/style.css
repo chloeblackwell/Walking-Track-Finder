@@ -1,12 +1,11 @@
 .navbar {
-  background-color: lightgreen;
-  opacity: 30%;
+  background-color: rgb(169, 233, 201);
   color: black !important;
   font-weight: bold;
 }
 
-.btn {
-  background-color: #001f3f !important;
+.pink {
+  background-color: pink !important;
   color: #ffffff !important;
 }
 
