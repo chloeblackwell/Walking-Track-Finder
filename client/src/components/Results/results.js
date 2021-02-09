@@ -51,7 +51,7 @@ function SearchResults() {
                 <div className="row">
                     {tracks.map(track => (
                         <Card style={{ width: '18rem', display: "flex" }}>
-                            <Card.Img src={track.track_image} alt={track.track_name} />
+                            <Card.Img className="image" src={track.track_image} alt={track.track_name} />
                             <Card.Title>
                                 {/* {track.track_image} */}
                                 {track.track_name}

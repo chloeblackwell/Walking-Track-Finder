@@ -32,14 +32,10 @@ router.post("/api/add", (req, res) => {
 
 router.delete("/api/deleteFavourite", (req, res) => {
 
-    Favourites.remove({ _id: req.params._id }, function (err) {
-        if (err) {
-            res.send(err);
-        }
-        else {
-            res.send({ data: "Record has been Deleted..!!" });
-        }
-    });
+    Favourites.deleteOne({ _id: req.params._id }, function (err, res) {
+
+        console.log(res);
+    })
 
 })
 
