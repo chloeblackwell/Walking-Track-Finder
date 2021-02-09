@@ -30,11 +30,11 @@ router.post("/api/add", (req, res) => {
         })
 })
 
-router.delete("/api/deleteFavourite", (req, res) => {
+router.delete("/api/deleteFavourite/:id", (req, res) => {
 
-    Favourites.deleteOne({ _id: req.params._id }, function (err, res) {
+    Favourites.deleteOne({ _id: req.params.id }, function (err, res) {
 
-        console.log(res);
+        console.log(res)
     })
 
 })

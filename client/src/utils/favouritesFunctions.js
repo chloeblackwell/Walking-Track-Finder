@@ -13,8 +13,8 @@ export const getFavourites = favouritesData => {
         })
 }
 
-export const deleteFavourites = favouritesData => {
+export const deleteFavourites = favouriteId => {
     return axios
-        .delete('/api/deleteFavourite', {
+        .delete(`/api/deleteFavourite/${favouriteId}`, {
         })
 }

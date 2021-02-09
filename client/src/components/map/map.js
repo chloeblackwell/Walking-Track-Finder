@@ -4,7 +4,8 @@ import "./map.css";
 import "mapbox-gl/dist/mapbox-gl.css"
 import MapboxGeocoder from "mapbox-gl-geocoder";
 
-mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
+// TODO Heroku doesn't support environment variable on build time
+mapboxgl.accessToken = "pk.eyJ1IjoiY2hsb2VibGFja3dlbGwiLCJhIjoiY2trYnVpZzFwMGZlazJwcGM5a2RlOXh0cCJ9.knhq7x98ERcUfvXD08kCAQ";
 
 
 class DisplayMap extends React.Component {
