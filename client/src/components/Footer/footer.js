@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
     return (
-        <footer className="footer text-center">
+        <footer className="footer footer-dark text-center">
             <span className="foot">Walking Track Finder By Chloe Blackwell 2021</span>
         </footer>
     )

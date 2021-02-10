@@ -9,8 +9,7 @@
   left: 0;
   right: 0;
   padding: 3px;
-  background: lightgreen;
-  opacity: 30%;
+  background-color: rgb(169, 233, 201);
 }
 
 .foot {

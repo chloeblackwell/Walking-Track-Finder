@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import LandingJumbo from "../../LandingJumbo/LandingJumbo";
-import Footer from "../../Footer/footer";
+// import Footer from "../../Footer/footer";
 import SearchResults from "../../Results/results";
 import DisplayMap from "../../map/map";
 
@@ -16,7 +16,6 @@ function Landing() {
             < DisplayMap />
             < SearchResults
             />
-            < Footer />
         </div>
 
     );

@@ -6,6 +6,7 @@ import Landing from './components/pages/Landing/Landing';
 import Register from './components/Register/register';
 import Login from './components/Login/login';
 import Dashboard from './components/pages/Dashboard/Dashboard';
+import Footer from "./components/Footer/footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { AppContextProvider } from './store/index';
@@ -27,7 +28,9 @@ function App() {
                     </div>
                 </div>
             </Router>
+            <Footer />
         </AppContextProvider>
+
     );
 }
 

@@ -23,6 +23,10 @@ const TrackSchema = new Schema({
     track_intensity: {
         type: String,
         required: true
+    },
+    track_duration: {
+        type: String,
+        required: true
     }
 });
 

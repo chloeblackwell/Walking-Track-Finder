@@ -2,7 +2,7 @@ import React from 'react';
 import { useAppContext } from '../../../store/index';
 import { useLoginCheck } from '../../../utils/setAuthToken';
 import FavouritesList from "../../favourites/favourites";
-import Footer from "../../Footer/footer";
+// import Footer from "../../Footer/footer";
 
 
 function DashBoard() {
@@ -25,7 +25,6 @@ function DashBoard() {
                     < FavouritesList />
                 </div>
             </div>
-            <Footer />
         </div>
     );
 
