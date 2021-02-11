@@ -27,7 +27,7 @@ function FavouriteList() {
             <div className="container">
                 <div className="row">
                     {favourites.map(favourite => (
-                        <Card style={{ width: '18rem', display: "flex" }}>
+                        <Card key={favourite.track._id} style={{ width: '18rem', display: "flex" }}>
                             <Card.Text>
                                 <Card.Img className="image" src={favourite.track.track_image} alt={favourite.track.track_name} />
                                 {favourite.track.track_name}<br></br>
@@ -36,7 +36,10 @@ function FavouriteList() {
                                 <AccessTimeIcon /> {favourite.track.track_duration}<br></br>
                                 <DirectionsWalkIcon /> {favourite.track.track_intensity}
                             </Card.Text>
-                            <Button onClick={() => deleteFavourites(favourite._id)}>Remove from favourites</Button>
+                            <Button onClick={() => {
+                                deleteFavourites(favourite._id);
+                                alert(favourite.track.track_name + " deleted from favourites")
+                            }}>Remove from favourites</Button>
                         </Card>
                     ))}
                 </div>

@@ -24,7 +24,6 @@ function SearchResults() {
 
     useEffect(() => {
         const results = tracks.filter(res => res.track_name.toLowerCase().includes(result)
-
         );
         setTracks(results)
     }, [result]);
@@ -54,7 +53,7 @@ function SearchResults() {
             <div className="container">
                 <div className="row">
                     {tracks.map(track => (
-                        <Card style={{ width: '18rem', display: "flex" }}>
+                        <Card key={track._id} style={{ width: '18rem', display: "flex" }}>
                             <Card.Img className="image" src={track.track_image} alt={track.track_name} />
                             <Card.Title>
                                 {/* {track.track_image} */}
@@ -67,7 +66,10 @@ function SearchResults() {
                                 <DirectionsWalkIcon />{track.track_intensity}
                             </Card.Text>
                             <Card.Footer>
-                                <Button onClick={() => addTrack(track._id)} className="primary"><FavoriteIcon />Add to favourites</Button>
+                                <Button onClick={() => {
+                                    addTrack(track._id)
+                                    alert(track.track_name + " added to favourites")
+                                }} className="primary"><FavoriteIcon />Add to favourites</Button>
                             </Card.Footer>
                         </Card>
                     ))}
