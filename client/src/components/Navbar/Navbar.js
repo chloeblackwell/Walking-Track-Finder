@@ -43,9 +43,6 @@ function Navbar() {
                     </Link>
             </li>
             <li>
-                {/* <a href="/" rel='noopener noreferrer' onClick={this.logOut.bind(this)}>
-                        Logout
-                    </a> */}
                 <button className="btn btn-sm active pink" id="logoutBtn" data-toggle="modal" data-target="#logoutModal" onClick={handleLogOut}>
                     <div>Logout</div>
                 </button>
@@ -57,10 +54,6 @@ function Navbar() {
             <Link className="navbar-brand" to="/">
                 Walking Track Finder
             </Link>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
             <div>
                 <div className='d-flex justify-content-end ml-auto' id='navbar1'>
                     {state.isAuthenticated ? userLink : loginRegLink}
