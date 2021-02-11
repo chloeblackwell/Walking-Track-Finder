@@ -27,7 +27,7 @@ function SearchResults() {
 
         );
         setTracks(results)
-    }, []);
+    }, [result]);
 
 
     const onChange = (e) => {
