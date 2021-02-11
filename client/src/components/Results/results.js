@@ -36,7 +36,7 @@ function SearchResults() {
 
     return (
         <div>
-            <form>
+            <form className="form-inline">
                 <input
                     value={result}
                     onChange={onChange}

@@ -1,10 +1,12 @@
 #searchBar {
   width: 200px;
-  margin-top: 50px;
+  margin-right: 20px;
 }
 
 form {
   margin-left: 35%;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .image {
