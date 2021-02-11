@@ -14,18 +14,21 @@ function SearchResults() {
 
     const [tracks, setTracks] = useState([]);
     const [result, setResult] = useState("");
+    const [filtered, setFiltered] = useState([...tracks]);
 
 
     useEffect(() => {
         getTracks().then(data => {
-            setTracks(data);
+            setTracks(data)
+            setFiltered(data);
         })
     }, []);
 
     useEffect(() => {
-        const results = tracks.filter(res => res.track_name.toLowerCase().includes(result)
+        const search = new RegExp(result, "i")
+        const results = tracks.filter(res => res.track_name.search(search) > -1
         );
-        setTracks(results)
+        setFiltered(results)
     }, [result]);
 
 
@@ -52,7 +55,7 @@ function SearchResults() {
             </form>
             <div className="container">
                 <div className="row">
-                    {tracks.map(track => (
+                    {filtered.map(track => (
                         <Card key={track._id} style={{ width: '18rem', display: "flex" }}>
                             <Card.Img className="image" src={track.track_image} alt={track.track_name} />
                             <Card.Title>
