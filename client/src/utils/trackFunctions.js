@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const getTracks = trackData => {
     return axios
-        .get('http://localhost:8080/api/tracks', {
+        .get('/api/tracks', {
         })
         .then(response => {
 
