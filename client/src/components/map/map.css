@@ -1,9 +1,10 @@
-.mapContainer {
-  height: 400px;
-  width: 600px;
-  margin-left: 25%;
-}
-
 .mapboxg1-control-container .mapboxg1-ctrl-top-right {
   left: 50px !important;
+}
+
+@media screen and (min-width: 245px) {
+  .mapContainer {
+    width: 100%;
+    height: 400px;
+  }
 }
