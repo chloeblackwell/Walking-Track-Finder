@@ -71,7 +71,6 @@ function SearchResults() {
                             <Card.Footer>
                                 <Button onClick={() => {
                                     addTrack(track._id)
-                                    alert(track.track_name + " added to favourites")
                                 }} className="primary"><FavoriteIcon />Add to favourites</Button>
                             </Card.Footer>
                         </Card>

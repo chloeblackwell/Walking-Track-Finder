@@ -18,11 +18,11 @@ export const addTrack = trackData => {
     return axios
         .post("/api/add", { trackData })
         .then(response => {
-            console.log(response);
+            alert("Added to favourites");
             return response.data
         })
         .catch(err => {
-            console.log(err);
+            alert("User must log in");
         })
 }
 
