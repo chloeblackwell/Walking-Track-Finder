@@ -41,6 +41,23 @@ class DisplayMap extends React.Component {
             });
         });
 
+        map.on('click', function (e) {
+            var features = map.queryRenderedFeatures(e.point, {
+                layers: ['tracks-2']
+            });
+
+            if (!features.length) {
+                return;
+            }
+
+            var feature = features[0];
+
+            var popup = new mapboxgl.Popup({ offset: [0, -15] })
+                .setLngLat(feature.geometry.coordinates)
+                .setHTML('<h4>' + feature.properties.title + '</h4>')
+                .addTo(map);
+        });
+
     }
 
     render() {
