@@ -18,7 +18,9 @@ let trackSeed = [
         track_location: "Engadine NSW",
         track_distance: "5.8km One Way",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "2hrs 30 mins"
+        track_duration: "2hrs 30 mins",
+        long: 151.01472,
+        lat: -34.067891
     },
     {
         track_image: "images/Garie.jpeg",
@@ -26,7 +28,9 @@ let trackSeed = [
         track_location: "Garie Beach NSW",
         track_distance: "11km One Way",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "4hrs 30 mins"
+        track_duration: "4hrs 30 mins",
+        long: 151.06645,
+        lat: -34.170208
     },
     {
         track_image: "images/WentworthFallsLoop.jpg",
@@ -34,7 +38,9 @@ let trackSeed = [
         track_location: "Wentworth Falls NSW",
         track_distance: "10km",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "6hrs"
+        track_duration: "6hrs",
+        long: 150.37644,
+        lat: -33.709737
     },
     {
         track_image: "images/GarrawarraFarm.jpeg"
@@ -43,7 +49,9 @@ let trackSeed = [
         track_location: "Royal National Park NSW",
         track_distance: "6km",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "2hrs 30 mins"
+        track_duration: "2hrs 30 mins",
+        long: 151.03931,
+        lat: -34.180069
     },
     {
         track_image: "images/Bundeena.jpg"
@@ -52,7 +60,9 @@ let trackSeed = [
         track_location: "Bundeena NSW",
         track_distance: "12.7km",
         track_intensity: "Grade 3/6 - Moderate",
-        track_duration: "4hrs 30 mins"
+        track_duration: "4hrs 30 mins",
+        long: 151.15107,
+        lat: -34.082703
     },
     {
         track_image: "images/coastal-track-01.jpg"
@@ -61,7 +71,9 @@ let trackSeed = [
         track_location: "Royal National Park NSW",
         track_distance: "27.4km One Way",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "2 days"
+        track_duration: "2 days",
+        long: 151.00562,
+        lat: -34.210782
     },
     {
         track_image: "images/furber-steps-scenic-railway-walk-01.jpg"
@@ -70,7 +82,9 @@ let trackSeed = [
         track_location: "Blue Mountains NSW",
         track_distance: "869m Circuit",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "1hr 15 mins"
+        track_duration: "1hr 15 mins",
+        long: 150.30096,
+        lat: -33.728585
     },
     {
         track_image: "images/ScenicWorldToKatoombaFalls.jpg"
@@ -79,7 +93,9 @@ let trackSeed = [
         track_location: "Katoomba NSW",
         track_distance: "1.2km",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "2hrs"
+        track_duration: "2hrs",
+        long: 150.30096,
+        lat: -33.728585
     },
     {
         track_image: "images/DevilsHoleTrail.jpg"
@@ -88,7 +104,9 @@ let trackSeed = [
         track_location: "Katoomba NSW",
         track_distance: "7km One Way",
         track_intensity: "Grade 6/6 - Experienced Walkers Only",
-        track_duration: "3hrs 30 mmins"
+        track_duration: "3hrs 30 mmins",
+        long: 150.29254,
+        lat: -33.713807
     },
     {
         track_image: "images/RuinedCastleWalk.jpg"
@@ -97,7 +115,9 @@ let trackSeed = [
         track_location: "Katoomba NSW",
         track_distance: "7.9km",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "5hrs"
+        track_duration: "5hrs",
+        long: 150.28237,
+        lat: -33.734348
     },
     {
         track_image: "images/HunterLookout.jpeg"
@@ -106,7 +126,9 @@ let trackSeed = [
         track_location: "Hunter Region NSW",
         track_distance: "5.6km Circuit",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "2hrs 30 mins"
+        track_duration: "2hrs 30 mins",
+        long: 151.41383,
+        lat: -32.962577
     },
     {
         track_image: "images/CharlestownPark.jpeg"
@@ -115,7 +137,9 @@ let trackSeed = [
         track_location: "Newcastle NSW",
         track_distance: "12.1km One Way",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "5hrs 30 mins"
+        track_duration: "5hrs 30 mins",
+        long: 151.69429,
+        lat: -32.967837
     },
     {
         track_image: "images/DeepPassTrail.jpg"
@@ -124,7 +148,9 @@ let trackSeed = [
         track_location: "Lithgow NSW",
         track_distance: "1.9km One Way",
         track_intensity: "Grade 3/6 - Moderate",
-        track_duration: "1hr"
+        track_duration: "1hr",
+        long: 150.3001,
+        lat: -33.340204
     },
     {
         track_image: "images/GlowWormTunnel.jpeg"
@@ -133,7 +159,9 @@ let trackSeed = [
         track_location: "Lithgow NSW",
         track_distance: "2.9km",
         track_intensity: "Grade 3/6 - Moderate",
-        track_duration: "1hr 45 mins"
+        track_duration: "1hr 45 mins",
+        long: 150.22363,
+        lat: -33.247942
     },
     {
         track_image: "images/NayookCanyonBushtrack.jpg"
@@ -142,7 +170,9 @@ let trackSeed = [
         track_location: "Lithgow NSW",
         track_distance: "2.2km Circuit",
         track_intensity: "Grade 5/6 - Experienced Walkers Only",
-        track_duration: "45 mins"
+        track_duration: "45 mins",
+        long: 150.3001,
+        lat: -33.340204
     },
     {
         track_image: "images/MinnamurraFalls.jpg"
@@ -151,7 +181,9 @@ let trackSeed = [
         track_location: "Jamberoo NSW",
         track_distance: "3.7km",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "1hr 45 mins"
+        track_duration: "1hr 45 mins",
+        long: 150.43394,
+        lat: -34.38047
     },
     {
         track_image: "images/JumpRock.jpg"
@@ -160,7 +192,9 @@ let trackSeed = [
         track_location: "Macquarie Pass NSW",
         track_distance: "3.5km",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "1hr 30 mins"
+        track_duration: "1hr 30 mins",
+        long: 150.40396,
+        lat: -34.34195
     },
     {
         track_image: "images/SublimePoint.jpg"
@@ -169,7 +203,9 @@ let trackSeed = [
         track_location: "Austinmer NSW",
         track_distance: "2.4km",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "45 mins"
+        track_duration: "45 mins",
+        long: 150.55281,
+        lat: -34.17458
     },
     {
         track_image: "images/WodiWodiTrack.jpg"
@@ -178,7 +214,9 @@ let trackSeed = [
         track_location: "Stanwell Park NSW",
         track_distance: "5.8km",
         track_intensity: "Grade 3/6 - Moderate",
-        track_duration: "1hr 30 mins"
+        track_duration: "1hr 30 mins",
+        long: 150.59000,
+        lat: -34.14144
     },
     {
         track_image: "images/grand-canyon-track.jpg"
@@ -187,7 +225,9 @@ let trackSeed = [
         track_location: "Blue Mountains NSW",
         track_distance: "5.8km",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "3hrs 30 mins"
+        track_duration: "3hrs 30 mins",
+        long: 150.18528,
+        lat: -33.39055
     },
     {
         track_image: "images/WongaWalk.jpg"
@@ -196,7 +236,9 @@ let trackSeed = [
         track_location: "Dorrigo NSW",
         track_distance: "6km",
         track_intensity: "Grade 2/6 - Easy No Experience Required",
-        track_duration: "3hrs"
+        track_duration: "3hrs",
+        long: 152.43344,
+        lat: -30.22209
     },
     {
         track_image: "images/thirlmere-lakes-track-01.jpg"
@@ -205,7 +247,9 @@ let trackSeed = [
         track_location: "Thirlmere NSW",
         track_distance: "6.3km",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "2hrs 30 mins"
+        track_duration: "2hrs 30 mins",
+        long: 150.32365,
+        lat: -34.13404
     },
     {
         track_image: "images/MountFairy.jpg"
@@ -214,7 +258,9 @@ let trackSeed = [
         track_location: "Kyogle NSW",
         track_distance: "3.2km",
         track_intensity: "Grade 3/6 - Moderate",
-        track_duration: "1hr 30 mins"
+        track_duration: "1hr 30 mins",
+        long: 153.01059,
+        lat: -28.37541
     },
     {
         track_image: "images/the-governor-walk.jpg"
@@ -223,7 +269,9 @@ let trackSeed = [
         track_location: "Mount Katutar National Park NSW",
         track_distance: "1.9km",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "1hr"
+        track_duration: "1hr",
+        long: 150.09046,
+        lat: -30.16574
     },
     {
         track_image: "images/SixtyFootFalls.jpg"
@@ -232,7 +280,9 @@ let trackSeed = [
         track_location: "Mittagong NSW",
         track_distance: "3.5km",
         track_intensity: "Grade 2/6 - Easy No Experience Required",
-        track_duration: "1hr"
+        track_duration: "1hr",
+        long: 150.27204,
+        lat: -34.26168
     },
     {
         track_image: "images/tomaree-head-summit-walk-01.jpg"
@@ -241,7 +291,9 @@ let trackSeed = [
         track_location: "Tomaree National Park NSW",
         track_distance: "2.1km",
         track_intensity: "Grade 6/6 - Experienced Walkers Only",
-        track_duration: "2hrs"
+        track_duration: "2hrs",
+        long: 152.10586,
+        lat: -32.43057
     },
     {
         track_image: "images/sawn-rocks-hero.jpg"
@@ -250,7 +302,9 @@ let trackSeed = [
         track_location: "Narrabri NSW",
         track_distance: "1.6km",
         track_intensity: "Grade 2/6 - Easy No Experience Required",
-        track_duration: "45 mins"
+        track_duration: "45 mins",
+        long: 150.03105,
+        lat: -30.08386
     },
     {
         track_image: "images/kiama-coast-walk-werri-beach.jpg"
@@ -259,7 +313,9 @@ let trackSeed = [
         track_location: "Kiama NSW",
         track_distance: "19.8km",
         track_intensity: "Grade 3/6 - Moderate",
-        track_duration: "5hrs 30 mins"
+        track_duration: "5hrs 30 mins",
+        long: 150.51420,
+        lat: -34.40192
     },
     {
         track_image: "images/WeddingCakeRock.jpg"
@@ -268,7 +324,9 @@ let trackSeed = [
         track_location: "Royal National Park NSW",
         track_distance: "7.7km",
         track_intensity: "Grade 3/6 - Moderate",
-        track_duration: "2hrs"
+        track_duration: "2hrs",
+        long: 151.09075,
+        lat: -34.06336
     },
     {
         track_image: "images/seven-mile-beach-03.jpg"
@@ -277,7 +335,9 @@ let trackSeed = [
         track_location: "Seven Mile Beach National Park NSW",
         track_distance: "11.1km",
         track_intensity: "Grade 2/6 - Easy",
-        track_duration: "3hrs 20 mins"
+        track_duration: "3hrs 20 mins",
+        long: 150.45172,
+        lat: -34.48391
     },
     {
         track_image: "images/jerrawangala-lookout-02.jpg"
@@ -286,7 +346,9 @@ let trackSeed = [
         track_location: "Jerrawangala National Park NSW",
         track_distance: "27.7km",
         track_intensity: "Grade 3/6 - Moderate",
-        track_duration: "7hrs 50 mins"
+        track_duration: "7hrs 50 mins",
+        long: 150.24342,
+        lat: -35.06110
     },
     {
         track_image: "images/DrawingRoomRocks.jpg"
@@ -295,7 +357,9 @@ let trackSeed = [
         track_location: "Barren Grounds Nature Reserve NSW",
         track_distance: "2.7km",
         track_intensity: "Grade 3/6 - Moderate",
-        track_duration: "1hr 10 mins"
+        track_duration: "1hr 10 mins",
+        long: 150.42028,
+        lat: -34.42552
     },
     {
         track_image: "images/Pigeon-House-Mountain.jpg"
@@ -304,7 +368,9 @@ let trackSeed = [
         track_location: "Morton National Park NSW",
         track_distance: "6.6km",
         track_intensity: "Grade 4/6 - Hard",
-        track_duration: "2hrs 40 mins"
+        track_duration: "2hrs 40 mins",
+        long: 150.15599,
+        lat: -35.20564
     },
     {
         track_image: "images/MountAlexandra.jpg"
@@ -313,7 +379,9 @@ let trackSeed = [
         track_location: "Mittagong NSW",
         track_distance: "9.3km",
         track_intensity: "Grade 3/6 - Moderate",
-        track_duration: "3hrs 15 mins"
+        track_duration: "3hrs 15 mins",
+        long: 150.26564,
+        lat: -3426422
     }
 
 ];

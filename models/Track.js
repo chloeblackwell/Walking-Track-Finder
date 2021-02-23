@@ -27,6 +27,14 @@ const TrackSchema = new Schema({
     track_duration: {
         type: String,
         required: true
+    },
+    long: {
+        type: Number,
+        required: true
+    },
+    lat: {
+        type: Number,
+        required: true
     }
 });
 
