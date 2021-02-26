@@ -15,6 +15,7 @@ function SearchResults() {
     const [tracks, setTracks] = useState([]);
     const [result, setResult] = useState("");
     const [filtered, setFiltered] = useState([...tracks]);
+    // const [weather, setWeather] = useState({});
 
 
     useEffect(() => {
@@ -30,6 +31,16 @@ function SearchResults() {
         );
         setFiltered(results)
     }, [result]);
+
+
+
+    // const apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=34.06789&lon=151.01472&exclude=current,minutely,hourly,alerts&appid=a972e7a083d2daf3a2de6d5c30c9acc4";
+
+    // useEffect(() => {
+    //     fetch(apiUrl)
+    //         .then((res) => res.json())
+    //         .then((data) => setWeather(data));
+    // }, []);
 
 
     const onChange = (e) => {
@@ -59,7 +70,6 @@ function SearchResults() {
                         <Card key={track._id} style={{ width: '18rem', display: "flex" }}>
                             <Card.Img className="image" src={track.track_image} alt={track.track_name} />
                             <Card.Title>
-                                {/* {track.track_image} */}
                                 {track.track_name}
                             </Card.Title>
                             <Card.Text>
@@ -69,6 +79,9 @@ function SearchResults() {
                                 <DirectionsWalkIcon />{track.track_intensity}
                             </Card.Text>
                             <Card.Footer>
+                                <Card.Title>
+
+                                </Card.Title>
                                 <Button onClick={() => {
                                     addTrack(track._id)
                                 }} className="primary"><FavoriteIcon />Add to favourites</Button>

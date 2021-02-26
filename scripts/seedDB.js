@@ -20,7 +20,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "2hrs 30 mins",
         long: 151.01472,
-        lat: -34.067891
+        lat: 34.06789
     },
     {
         track_image: "images/Garie.jpeg",
@@ -30,7 +30,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "4hrs 30 mins",
         long: 151.06645,
-        lat: -34.170208
+        lat: 34.17020
     },
     {
         track_image: "images/WentworthFallsLoop.jpg",
@@ -40,7 +40,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "6hrs",
         long: 150.37644,
-        lat: -33.709737
+        lat: 33.70973
     },
     {
         track_image: "images/GarrawarraFarm.jpeg"
@@ -51,7 +51,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "2hrs 30 mins",
         long: 151.03931,
-        lat: -34.180069
+        lat: 34.18006
     },
     {
         track_image: "images/Bundeena.jpg"
@@ -62,7 +62,7 @@ let trackSeed = [
         track_intensity: "Grade 3/6 - Moderate",
         track_duration: "4hrs 30 mins",
         long: 151.15107,
-        lat: -34.082703
+        lat: 34.08270
     },
     {
         track_image: "images/coastal-track-01.jpg"
@@ -73,7 +73,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "2 days",
         long: 151.00562,
-        lat: -34.210782
+        lat: 34.21078
     },
     {
         track_image: "images/furber-steps-scenic-railway-walk-01.jpg"
@@ -84,7 +84,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "1hr 15 mins",
         long: 150.30096,
-        lat: -33.728585
+        lat: 33.72858
     },
     {
         track_image: "images/ScenicWorldToKatoombaFalls.jpg"
@@ -95,7 +95,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "2hrs",
         long: 150.30096,
-        lat: -33.728585
+        lat: 33.72858
     },
     {
         track_image: "images/DevilsHoleTrail.jpg"
@@ -106,7 +106,7 @@ let trackSeed = [
         track_intensity: "Grade 6/6 - Experienced Walkers Only",
         track_duration: "3hrs 30 mmins",
         long: 150.29254,
-        lat: -33.713807
+        lat: 33.71380
     },
     {
         track_image: "images/RuinedCastleWalk.jpg"
@@ -117,7 +117,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "5hrs",
         long: 150.28237,
-        lat: -33.734348
+        lat: 33.73434
     },
     {
         track_image: "images/HunterLookout.jpeg"
@@ -128,7 +128,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "2hrs 30 mins",
         long: 151.41383,
-        lat: -32.962577
+        lat: 32.96257
     },
     {
         track_image: "images/CharlestownPark.jpeg"
@@ -139,7 +139,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "5hrs 30 mins",
         long: 151.69429,
-        lat: -32.967837
+        lat: 32.96783
     },
     {
         track_image: "images/DeepPassTrail.jpg"
@@ -150,7 +150,7 @@ let trackSeed = [
         track_intensity: "Grade 3/6 - Moderate",
         track_duration: "1hr",
         long: 150.3001,
-        lat: -33.340204
+        lat: 33.34020
     },
     {
         track_image: "images/GlowWormTunnel.jpeg"
@@ -161,7 +161,7 @@ let trackSeed = [
         track_intensity: "Grade 3/6 - Moderate",
         track_duration: "1hr 45 mins",
         long: 150.22363,
-        lat: -33.247942
+        lat: -33.24794
     },
     {
         track_image: "images/NayookCanyonBushtrack.jpg"
@@ -172,7 +172,7 @@ let trackSeed = [
         track_intensity: "Grade 5/6 - Experienced Walkers Only",
         track_duration: "45 mins",
         long: 150.3001,
-        lat: -33.340204
+        lat: 33.34020
     },
     {
         track_image: "images/MinnamurraFalls.jpg"
@@ -183,7 +183,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "1hr 45 mins",
         long: 150.43394,
-        lat: -34.38047
+        lat: 34.38047
     },
     {
         track_image: "images/JumpRock.jpg"
@@ -194,7 +194,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "1hr 30 mins",
         long: 150.40396,
-        lat: -34.34195
+        lat: 34.34195
     },
     {
         track_image: "images/SublimePoint.jpg"
@@ -205,7 +205,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "45 mins",
         long: 150.55281,
-        lat: -34.17458
+        lat: 34.17458
     },
     {
         track_image: "images/WodiWodiTrack.jpg"
@@ -216,7 +216,7 @@ let trackSeed = [
         track_intensity: "Grade 3/6 - Moderate",
         track_duration: "1hr 30 mins",
         long: 150.59000,
-        lat: -34.14144
+        lat: 34.14144
     },
     {
         track_image: "images/grand-canyon-track.jpg"
@@ -227,7 +227,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "3hrs 30 mins",
         long: 150.18528,
-        lat: -33.39055
+        lat: 33.39055
     },
     {
         track_image: "images/WongaWalk.jpg"
@@ -238,7 +238,7 @@ let trackSeed = [
         track_intensity: "Grade 2/6 - Easy No Experience Required",
         track_duration: "3hrs",
         long: 152.43344,
-        lat: -30.22209
+        lat: 30.22209
     },
     {
         track_image: "images/thirlmere-lakes-track-01.jpg"
@@ -249,7 +249,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "2hrs 30 mins",
         long: 150.32365,
-        lat: -34.13404
+        lat: 34.13404
     },
     {
         track_image: "images/MountFairy.jpg"
@@ -260,7 +260,7 @@ let trackSeed = [
         track_intensity: "Grade 3/6 - Moderate",
         track_duration: "1hr 30 mins",
         long: 153.01059,
-        lat: -28.37541
+        lat: 28.37541
     },
     {
         track_image: "images/the-governor-walk.jpg"
@@ -271,7 +271,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "1hr",
         long: 150.09046,
-        lat: -30.16574
+        lat: 30.16574
     },
     {
         track_image: "images/SixtyFootFalls.jpg"
@@ -282,7 +282,7 @@ let trackSeed = [
         track_intensity: "Grade 2/6 - Easy No Experience Required",
         track_duration: "1hr",
         long: 150.27204,
-        lat: -34.26168
+        lat: 34.26168
     },
     {
         track_image: "images/tomaree-head-summit-walk-01.jpg"
@@ -293,7 +293,7 @@ let trackSeed = [
         track_intensity: "Grade 6/6 - Experienced Walkers Only",
         track_duration: "2hrs",
         long: 152.10586,
-        lat: -32.43057
+        lat: 32.43057
     },
     {
         track_image: "images/sawn-rocks-hero.jpg"
@@ -304,7 +304,7 @@ let trackSeed = [
         track_intensity: "Grade 2/6 - Easy No Experience Required",
         track_duration: "45 mins",
         long: 150.03105,
-        lat: -30.08386
+        lat: 30.08386
     },
     {
         track_image: "images/kiama-coast-walk-werri-beach.jpg"
@@ -315,7 +315,7 @@ let trackSeed = [
         track_intensity: "Grade 3/6 - Moderate",
         track_duration: "5hrs 30 mins",
         long: 150.51420,
-        lat: -34.40192
+        lat: 34.40192
     },
     {
         track_image: "images/WeddingCakeRock.jpg"
@@ -326,7 +326,7 @@ let trackSeed = [
         track_intensity: "Grade 3/6 - Moderate",
         track_duration: "2hrs",
         long: 151.09075,
-        lat: -34.06336
+        lat: 34.06336
     },
     {
         track_image: "images/seven-mile-beach-03.jpg"
@@ -337,7 +337,7 @@ let trackSeed = [
         track_intensity: "Grade 2/6 - Easy",
         track_duration: "3hrs 20 mins",
         long: 150.45172,
-        lat: -34.48391
+        lat: 34.48391
     },
     {
         track_image: "images/jerrawangala-lookout-02.jpg"
@@ -348,7 +348,7 @@ let trackSeed = [
         track_intensity: "Grade 3/6 - Moderate",
         track_duration: "7hrs 50 mins",
         long: 150.24342,
-        lat: -35.06110
+        lat: 35.06110
     },
     {
         track_image: "images/DrawingRoomRocks.jpg"
@@ -359,7 +359,7 @@ let trackSeed = [
         track_intensity: "Grade 3/6 - Moderate",
         track_duration: "1hr 10 mins",
         long: 150.42028,
-        lat: -34.42552
+        lat: 34.42552
     },
     {
         track_image: "images/Pigeon-House-Mountain.jpg"
@@ -370,7 +370,7 @@ let trackSeed = [
         track_intensity: "Grade 4/6 - Hard",
         track_duration: "2hrs 40 mins",
         long: 150.15599,
-        lat: -35.20564
+        lat: 35.20564
     },
     {
         track_image: "images/MountAlexandra.jpg"
@@ -381,7 +381,7 @@ let trackSeed = [
         track_intensity: "Grade 3/6 - Moderate",
         track_duration: "3hrs 15 mins",
         long: 150.26564,
-        lat: -3426422
+        lat: 34.26422
     }
 
 ];
