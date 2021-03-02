@@ -8,7 +8,7 @@ import jwt_decode from 'jwt-decode';
 
 function Login() {
     const history = useHistory();
-    console.log("useHistory");
+    // console.log("useHistory");
 
     const [formState, setFormState] = useState({
         email: '',
@@ -18,7 +18,7 @@ function Login() {
     const [, appDispatch] = useAppContext();
 
     const onChange = (e) => {
-        console.log("onchange");
+        // console.log("onchange");
         setFormState({
             ...formState,
             [e.target.name]: e.target.value,
@@ -26,7 +26,7 @@ function Login() {
     };
 
     const handleSubmit = async (e) => {
-        console.log("handleSubmit");
+        // console.log("handleSubmit");
         e.preventDefault();
         const user = {
             email: formState.email,
@@ -40,7 +40,7 @@ function Login() {
             setAuthToken(token);
             // Decode token to get user data
             const decodedToken = jwt_decode(token);
-            console.log(response, decodedToken);
+            // console.log(response, decodedToken);
             // Set current user
             appDispatch({ type: SET_CURRENT_USER, payload: decodedToken });
             history.push('/dashboard');

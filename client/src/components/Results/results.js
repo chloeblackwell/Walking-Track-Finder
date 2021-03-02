@@ -15,15 +15,16 @@ function SearchResults() {
     const [tracks, setTracks] = useState([]);
     const [result, setResult] = useState("");
     const [filtered, setFiltered] = useState([...tracks]);
-    // const [weather, setWeather] = useState({});
+
 
 
     useEffect(() => {
         getTracks().then(data => {
             setTracks(data)
-            setFiltered(data);
+            setFiltered(data)
         })
     }, []);
+
 
     useEffect(() => {
         const search = new RegExp(result, "i")
@@ -32,15 +33,6 @@ function SearchResults() {
         setFiltered(results)
     }, [result]);
 
-
-
-    // const apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=34.06789&lon=151.01472&exclude=current,minutely,hourly,alerts&appid=a972e7a083d2daf3a2de6d5c30c9acc4";
-
-    // useEffect(() => {
-    //     fetch(apiUrl)
-    //         .then((res) => res.json())
-    //         .then((data) => setWeather(data));
-    // }, []);
 
 
     const onChange = (e) => {
@@ -66,6 +58,7 @@ function SearchResults() {
             </form>
             <div className="container">
                 <div className="row">
+                    {/* <Button onClick={sortByDuration} /> */}
                     {filtered.map(track => (
                         <Card key={track._id} style={{ width: '18rem', display: "flex" }}>
                             <Card.Img className="image" src={track.track_image} alt={track.track_name} />
@@ -73,6 +66,7 @@ function SearchResults() {
                                 {track.track_name}
                             </Card.Title>
                             <Card.Text>
+
                                 <LocationOnIcon />{track.track_location}<br></br>
                                 <FontAwesomeIcon icon={faRoute} /> {track.track_distance}<br></br>
                                 <AccessTimeIcon />{track.track_duration}<br></br>

@@ -15,12 +15,13 @@ function FavouriteList() {
 
     const [favourites, setFavourites] = useState([]);
 
+
     useEffect(() => {
         getFavourites().then(data => {
-            console.log(data);
             setFavourites(data);
         })
     }, []);
+
 
     return (
         <div>

@@ -26,13 +26,14 @@ router.post("/api/add", (req, res) => {
             }
             else {
                 res.status(400).json
+                redirect("/api/login");
             }
         })
 })
 
-router.delete("/api/deleteFavourite/:id", (req, res) => {
+router.delete("/api/deleteFavourite/:id", async (req, res) => {
 
-    Favourites.deleteOne({ _id: req.params.id }, function (err, result) {
+    await Favourites.deleteOne({ _id: req.params.id }, function (err, result) {
 
         if (err) {
             res.send(err)

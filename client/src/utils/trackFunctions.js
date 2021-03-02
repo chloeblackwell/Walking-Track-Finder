@@ -22,8 +22,8 @@ export const addTrack = trackData => {
             return response.data
         })
         .catch(err => {
+
             alert("User must log in");
+
         })
 }
-
-// Get one track 

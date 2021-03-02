@@ -6,7 +6,7 @@ import FavouritesList from "../../favourites/favourites";
 
 function DashBoard() {
     const [state, appDispatch] = useAppContext();
-    console.log(state);
+    // console.log(state);
 
     useLoginCheck(appDispatch);
 

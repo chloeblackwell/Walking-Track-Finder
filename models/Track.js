@@ -29,11 +29,11 @@ const TrackSchema = new Schema({
         required: true
     },
     long: {
-        type: Number,
+        type: String,
         required: true
     },
     lat: {
-        type: Number,
+        type: String,
         required: true
     }
 });
